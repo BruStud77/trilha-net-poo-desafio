@@ -4,7 +4,6 @@ namespace DesafioPOO.Models
     public class Nokia : Smartphone
     {
         public Nokia() : base() { }
-        // TODO: Sobrescrever o método "InstalarAplicativo"
         public Nokia(string numero, string modelo, string imei,int memoriaPrincipal, int memoriaRAM) 
         : base(numero, modelo, imei, memoriaPrincipal, memoriaRAM) 
         {
@@ -15,6 +14,7 @@ namespace DesafioPOO.Models
             MemoriaRAM = memoriaRAM;  
         }
         
+        // DONE: Sobrescrever o método "InstalarAplicativo"
         public override void InstalarAplicativo(string nomeApp)
         {
             nomeApp = "Facebook";
